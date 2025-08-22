@@ -1,7 +1,7 @@
 from collections import deque
 
 # Binary Tree Node
-class Node:
+class TreeNode:
     def __init__(self, val):
         self.val = val
         self.left = None
@@ -36,12 +36,12 @@ def top_view(root):
 
 # Example usage
 if __name__ == "__main__":
-    root = Node(1)
-    root.left = Node(2)
-    root.right = Node(3)
-    root.left.right = Node(4)
-    root.right.left = Node(5)
-    root.right.right = Node(6)
-    root.right.left.right = Node(7)
+    root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(3)
+    root.left.right = TreeNode(4)
+    root.right.left = TreeNode(5)
+    root.right.right = TreeNode(6)
+    root.right.left.right = TreeNode(7)
 
     print("Top View:", top_view(root))
